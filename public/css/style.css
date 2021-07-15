@@ -1,0 +1,409 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif !important;
+}
+ul {
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover,
+a:focus,
+a:active {
+	outline: 0px;
+}
+img {
+	max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+}
+p {
+	color: #333;
+}
+
+.header {
+	background: #fff;
+	line-height: 80px;
+}
+.menu {
+	float: right;
+}
+.menu li {
+	float: left;
+}
+.menu li a {
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 25px;
+}
+li.trial a {
+	background: #05c6ff;
+	padding: 10px 15px;
+	margin-left: 25px;
+	color: #fff;
+}
+.banner {
+	padding: 40px 0px;
+}
+.banner h1 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+.banner p {
+	font-size: 22px;
+	color: #000;
+	margin-bottom: 50px;
+}
+.get-start {
+	background: #05c6ff;
+	display: block;
+	font-size: 24px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	width: 290px;
+	border-radius: 50px;
+}
+.brands {
+	background: #f1f1f1;
+}
+.process {
+	padding-bottom: 125px;
+}
+.brands h2 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-top: 111px;
+	margin-bottom: 30px;
+}
+.brands p {
+	font-size: 21px;
+	color: #000;
+	margin-bottom: 60px;
+}
+.brands a {
+	font-size: 17px;
+	color: #05c6ff;
+}
+.team {
+	padding: 50px 0px;
+}
+.team h2 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+.box1 {
+	border: 1px solid #777;
+	padding: 48px 30px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.box1 h3 {
+	font-size: 40px;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+.box1 h5 {
+	margin-bottom: 30px;
+	font-size: 17px;
+	color: #000;
+}
+.box1 p {
+	margin-bottom: 30px;
+	font-size: 17px;
+	color: #000;
+}
+p.author-name {
+	font-weight: 600;
+	margin-bottom: 0;
+	text-align: right;
+	display: block;
+}
+span.position-post {
+	font-size: 13px;
+	text-align: right;
+	display: block;
+}
+.view-more-team a {
+	font-size: 17px;
+	color: #05c6ff;
+	margin-top: 30px;
+	display: block;
+}
+.get-start-sec h2 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-top: 65px;
+}
+.get-start-sec .container {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+.get-btn {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.get-btn a {
+	width: 300px;
+	padding: 10px;
+	background: #05c6ff;
+	color: #fff;
+	border-radius: 40px;
+	display: inline-block;
+	margin: 0px 15px;
+	font-size: 19px;
+}
+.request-demo {
+	background: #fff !important;
+	color: #000 !important;
+	box-shadow: 0px 0px 5px #eee;
+}
+.request-demo:hover {
+	background: #05c6ff !important;
+	color: #fff !important;
+}
+.get-btn p a {
+	background: none;
+	padding: none;
+	color: #000;
+	font-size: 17px;
+	margin-top: 10px;
+}
+.footer1 {
+	padding: 50px 0;
+}
+.footer1 .foot-col h3 {
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.footer1 .foot-col ul li a {
+	font-size: 14px;
+	color: #000;
+	line-height: 30px;
+}
+.footer1 .foot-col ul li a:hover {
+	color: #05c6ff;
+}
+.foot-col {
+	float: left;
+	width: 20%;
+	padding: 0px 15px 0px 0px;
+}
+.login-form {
+	padding-top: 25px;
+}
+.login-form h3 {
+	font-size: 23px;
+	color: #000;
+	font-weight: 600;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.login-form input.form-control {
+	height: 50px;
+	border: 2px solid #dcdcdc;
+	margin-bottom: 30px;
+	width: 315px;
+}
+.login-form form {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+}
+.login-form button {
+	width: 315px;
+	height: 55px;
+	font-size: 17px;
+	background: #05c6ff;
+	border: none;
+	margin-bottom: 30px;
+}
+.login-form button:hover {
+	background: #05c6ff;
+}
+.login-form .form-group.form-check {
+	position: relative;
+	margin-bottom: 30px;
+}
+.forgot {
+	position: absolute;
+	right: 0;
+}
+.right-bar-login {
+	background: #eee;
+	position: absolute !important;
+	height: 100%;
+	right: 0;
+	top: 0;
+	padding-top: 100px;
+}
+.right-bar-content {
+	padding: 100px;
+	padding-bottom: 30px;
+	padding-top: 0px;
+}
+.right-bar-content h4 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.right-bar-content p {
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #000;
+}
+.right-bar-content a {
+	color: #05c6ff;
+	font-size: 14px;
+}
+.social-btn a {
+	margin: 0px 15px;
+}
+.login-form p {
+	font-size: 16px;
+	color: #666;
+}
+.signup-text {
+	margin-top: 25px;
+}
+
+.col-sm-6.brand-img {
+	text-align: right;
+}
+.logo1 {
+	line-height: inherit;
+}
+.status-box.light-blue p {
+	color: #fff;
+}
+.status-box.light-green p {
+	color: #fff;
+}
+.status-box.light-yellow p {
+	color: #fff;
+}
+.status-box.dark-blue p,
+.status-box.dark-green p,
+.status-box.dark-red p,
+.status-box.mix-blue p {
+	color: #fff;
+}
+h5.modal-title {
+	color: #fff;
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 1px solid #e9ecef !important;
+}
+div#d {
+	left: -50px !important;
+}
+.red-alert {
+    position: absolute;
+    line-height: 45px;
+    font-size: 14px;
+    color: #fff;
+    background: red;
+    z-index: 9999;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0;
+}
+.red-alert span {
+    float: right;
+}
+.green-alert {
+    position: absolute;
+    line-height: 45px;
+    font-size: 14px;
+    color: #fff;
+    background:#009e6b
+    z-index: 9999;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0;
+}
+.green-alert span {
+    float: right;
+}
+.pricing-page {
+    padding: 40px 0px;
+}
+.container.pricing-option .col-sm-4 {
+    background: #fff;
+    padding: 30px;
+		box-shadow: 0px 0px 5px #ccc;
+}
+.container.pricing-option .col-sm-4:nth-child(2) {
+    background: rgb(225, 249, 234);
+}
+.pricing-plan h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.pricing-plan button {
+    background: #05c6ff;
+    border: 0px;
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    line-height: 45px;
+    font-size: 16px;
+		margin-bottom: 15px;
+}
+.pricing-plan p {
+    margin-bottom: 5px;
+}
+p.plan-price {
+    font-size: 18px;
+    color: green;
+    font-weight: 600;
+}
+.pricing-plan ul li .fa {
+    color: green;
+    margin-right: 15px;
+}
+.pricing-plan ul li {
+    line-height: 30px;
+    font-size: 16px;
+}
+.pricing-plan button:hover
+{
+background:green;
+}
+.col-sm-4.close-panel {
+    text-align: right;
+    font-size: 30px;
+}
+.enter-txt {
+    border: 2px solid #dcdcdc;
+    width: 315px;
+    height: 80px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
