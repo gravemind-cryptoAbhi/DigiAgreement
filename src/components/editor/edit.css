@@ -1,0 +1,49 @@
+.inp {
+	width: 190px;
+	height: 30px;
+	background-color: #e6f9ff;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 0.5em;
+}
+#container {
+	width: 95%px;
+	height: 150px;
+}
+.sign {
+	width: 230px;
+	height: 100px;
+	z-index: 9;
+	background-color: #f1f1f1;
+	border: 1px solid #d3d3d3;
+}
+.select {
+	background-color: #e6f9ff;
+	width: 190px;
+	height: 30px;
+}
+.my-alert {
+	position: absolute;
+	line-height: 45px;
+	font-size: 14px;
+	z-index: 9999999;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	top: 0;
+}
+#mydiv {
+	position: absolute;
+	z-index: 9;
+	background-color: #f1f1f1;
+	text-align: center;
+	border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background-color: #2196f3;
+	color: #fff;
+}

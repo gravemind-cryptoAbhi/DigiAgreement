@@ -1,0 +1,84 @@
+{
+	"name": "digiagreement",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://test.digiagreement.com",
+	"dependencies": {
+		"@ant-design/icons": "^4.5.0",
+		"@emotion/react": "^11.1.5",
+		"@material-ui/core": "^4.11.3",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/lab": "^4.0.0-alpha.57",
+		"@stripe/stripe-js": "^1.13.1",
+		"@testing-library/jest-dom": "^5.11.9",
+		"@testing-library/react": "^11.2.5",
+		"@testing-library/user-event": "^12.8.3",
+		"antd": "^4.13.1",
+		"axios": "^0.21.1",
+		"better-react-spinkit": "^2.0.4",
+		"crypto-js": "^4.0.0",
+		"disable-browser-back-navigation": "^0.1.0",
+		"gapi-script": "^1.1.0",
+		"html-webpack-plugin": "^4.5.0",
+		"jquery": "^3.6.0",
+		"jquery-resizable": "^1.0.6",
+		"jquery-ui": "^1.12.1",
+		"jquery-ui-dist": "^1.12.1",
+		"jspdf-html2canvas": "^1.4.9",
+		"mammoth": "^1.4.16",
+		"material-ui-dropzone": "^3.5.0",
+		"moment": "^2.29.1",
+		"prop-types": "^15.7.2",
+		"query-string": "^4.3.4",
+		"react": "^17.0.1",
+		"react-contenteditable": "^3.3.5",
+		"react-dom": "^17.0.1",
+		"react-error-boundary": "^3.1.1",
+		"react-facebook-login": "^4.1.1",
+		"react-froala-wysiwyg": "^3.2.6-1",
+		"react-google-login": "^5.2.2",
+		"react-images-upload": "^1.2.8",
+		"react-linkedin-login-oauth2": "^1.0.9",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"react-spinners": "^0.10.6",
+		"source-map-explorer": "^2.5.2",
+		"store": "^2.0.12",
+		"styled-components": "^5.2.1",
+		"web-vitals": "^1.1.0"
+	},
+	"scripts": {
+		"analyze": "source-map-explorer 'build/static/js/*.js'",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.3",
+		"@babel/preset-env": "^7.13.10",
+		"@babel/preset-react": "^7.12.13",
+		"babel-loader": "^8.1.0",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^4.5.0"
+	}
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="google-signin-client_id"
+			content="106267470829-t02dhnpood48sg6220hifnouj87spetm.apps.googleusercontent.com"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<!-- <link href="%PUBLIC_URL%/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+		<link rel="shortcut icon" href="%PUBLIC_URL%/assets/images/favicon.ico" />
+
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="%PUBLIC_URL%/assets/libs/chartist/chartist.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="%PUBLIC_URL%/assets/css/bootstrap.min.css"
+			id="bootstrap-style"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
+		<link
+			href="%PUBLIC_URL%/assets/css/icons.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="%PUBLIC_URL%/assets/libs/summernote/summernote-bs4.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+
+		<link
+			href="%PUBLIC_URL%/assets/css/app.min.css"
+			id="app-style"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="%PUBLIC_URL%/css/style.css" rel="stylesheet" />
+		<link href="%PUBLIC_URL%/css/responsive.css" rel="stylesheet" />
+		<title>DigiAgreement</title>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			function onLoad() {
+				gapi.load('auth2', function () {
+					gapi.auth2.init();
+				});
+			}
+		</script>
+	</head>
+
+	<body data-sidebar="dark" class="sidebar-enable vertical-collpsed">
+		<div id="root123"></div>
+		<script
+			src="https://apis.google.com/js/platform.js?onload=onLoad"
+			async
+			defer
+		></script>
+		<script src="%PUBLIC_URL%/assets/libs/jquery/jquery.min.js"></script>
+
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+		<!-- Buttons examples -->
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/jszip/jszip.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+		<!-- Responsive examples -->
+
+		<script src="%PUBLIC_URL%/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<script src="%PUBLIC_URL%/assets/libs/peity/jquery.peity.min.js"></script>
+
+		<script src="%PUBLIC_URL%/assets/libs/chartist/chartist.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
+
+		<script src="%PUBLIC_URL%/assets/js/pages/dashboard.init.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/metismenu/metisMenu.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/simplebar/simplebar.min.js"></script>
+		<script src="%PUBLIC_URL%/assets/libs/node-waves/waves.min.js"></script>
+
+		<script src="%PUBLIC_URL%/assets/js/app.js"></script>
+
+		<script>
+			$(function () {
+				$('#upload_link').on('click', function (e) {
+					e.preventDefault();
+					$('#upload:hidden').trigger('click');
+				});
+			});
+		</script>
+	</body>
+</html>
