@@ -242,6 +242,10 @@ const HeadSide = (props) => {
 			});
 	};
 
+//state for menu drawer
+
+const [showMenu, setShowMenu] = useState(false);
+
 	const [page, setPage] = useState(0);
 	const [rowsPerPage, setRowsPerPage] = useState(5);
 
@@ -384,12 +388,16 @@ const HeadSide = (props) => {
 							type='button'
 							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
 							id='vertical-navmenu-btn'
+							onClick={()=>{
+								setShowMenu(!showMenu)
+							}}
 						>
 							<i class='mdi mdi-menu'></i>
+
 						</button>
 
 						<div className='d-none d-sm-block'>
-							<h4 className='font-size-18' style={{ marginTop: '19px' }}>
+							<h4 className='font-size-18' style={{  marginTop: '19px' }}>
 								{props.heading}
 							</h4>
 						</div>
@@ -724,7 +732,7 @@ const HeadSide = (props) => {
 				</div>
 			</header>
 
-			<div className='vertical-menubar'>
+			<div className='vertical-menubar' style={{display:showMenu? "block" : "none"}}>
 				<div data-simplebar className='h-100'>
 					<div id='sidebar-navbar-menu'>
 						<ul className='metismenu list-unstyled' id='side-menu'>

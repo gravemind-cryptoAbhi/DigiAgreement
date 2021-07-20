@@ -29,6 +29,7 @@ span.otp-resend {
 	margin: 0 auto;
 	height: 70px;
 	padding: 0 calc(24px / 2) 0 0;
+	
 }
 .navbar-header .dropdown.show .header-item {
 	background-color: rgba(52, 58, 64, 0.05);
@@ -338,6 +339,7 @@ body[data-layout='horizontal'] .footer {
 	transition-property: height, visibility;
 }
 .vertical-menubar {
+	
 	width: 240px;
 	z-index: 1001;
 	background: #fff;
@@ -347,6 +349,7 @@ body[data-layout='horizontal'] .footer {
 	top: 70px;
 	-webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
 	box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+	
 }
 .main-content {
 	margin-left: 240px;
@@ -1709,6 +1712,7 @@ body[data-layout='horizontal'][data-layout-size='boxed'] .navbar-header {
 	max-height: 100%;
 	scrollbar-width: none;
 	padding: 0 !important;
+	
 }
 .simplebar-content-wrapper::-webkit-scrollbar,
 .simplebar-hide-scrollbar::-webkit-scrollbar {
