@@ -13,6 +13,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import './profile.css'
 
 const useStyles = makeStyles((theme) => ({
 	backdrop: {
