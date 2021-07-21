@@ -10,6 +10,7 @@ import LinkedLogin from './LinkedLogin';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import { css } from '@emotion/react';
 import { message, Space } from 'antd';
+import './login.css'
 
 const Login = () => {
 	useEffect(() => {
@@ -80,7 +81,7 @@ const Login = () => {
 	};
 
 	const override = css`
-		display: block;
+		display: none;
 		margin: 1px auto;
 		border-color: red;
 		opacity: 0.9;

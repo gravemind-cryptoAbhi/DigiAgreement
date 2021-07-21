@@ -242,9 +242,9 @@ const HeadSide = (props) => {
 			});
 	};
 
-//state for menu drawer
+	//state for menu drawer
 
-const [showMenu, setShowMenu] = useState(false);
+	const [showMenu, setShowMenu] = useState(false);
 
 	const [page, setPage] = useState(0);
 	const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -303,8 +303,8 @@ const [showMenu, setShowMenu] = useState(false);
 					{remainingDays < 0
 						? `Your plan has been expired`
 						: remainingDays === 1
-						? `Your plan is about to expire, ${remainingDays} day is left.`
-						: `Your plan is about to expire, ${remainingDays} days left.`}
+							? `Your plan is about to expire, ${remainingDays} day is left.`
+							: `Your plan is about to expire, ${remainingDays} days left.`}
 					{'  '}
 					<Link to='/pricing' style={{ color: 'white' }}>
 						<u>Subscribe Now</u>
@@ -388,7 +388,7 @@ const [showMenu, setShowMenu] = useState(false);
 							type='button'
 							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
 							id='vertical-navmenu-btn'
-							onClick={()=>{
+							onClick={() => {
 								setShowMenu(!showMenu)
 							}}
 						>
@@ -568,10 +568,10 @@ const [showMenu, setShowMenu] = useState(false);
 																				<tbody>
 																					{(rowsPerPage > 0
 																						? templates.slice(
-																								page * rowsPerPage,
-																								page * rowsPerPage +
-																									rowsPerPage,
-																						  )
+																							page * rowsPerPage,
+																							page * rowsPerPage +
+																							rowsPerPage,
+																						)
 																						: templates
 																					).map((data, index) => (
 																						<tr key={index}>
@@ -677,9 +677,9 @@ const [showMenu, setShowMenu] = useState(false);
 								className='btn header-item waves-effect'
 								id='page-header-user-dropdown'
 								data-toggle='dropdown'
-								// data-target='#d'
-								// aria-expanded='true'
-								// aria-controls='d'
+							// data-target='#d'
+							// aria-expanded='true'
+							// aria-controls='d'
 							>
 								{data['profile_pic'] ? (
 									<img
@@ -732,7 +732,7 @@ const [showMenu, setShowMenu] = useState(false);
 				</div>
 			</header>
 
-			<div className='vertical-menubar' style={{display:showMenu? "block" : "none"}}>
+			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" }}>
 				<div data-simplebar className='h-100'>
 					<div id='sidebar-navbar-menu'>
 						<ul className='metismenu list-unstyled' id='side-menu'>
@@ -752,6 +752,8 @@ const [showMenu, setShowMenu] = useState(false);
 									<i className='fas fa-home'></i>
 									<span>Dashboard</span>
 								</Link>
+
+
 							</li>
 							<li
 								className={props.page === 'document' ? 'mm-active' : undefined}
@@ -806,8 +808,8 @@ const [showMenu, setShowMenu] = useState(false);
 								<Link
 									to='/websocket'
 									className='waves-effect'
-									//onClick={() => history.push('/websocket')}
-									//rel='noreferrer'
+								//onClick={() => history.push('/websocket')}
+								//rel='noreferrer'
 								>
 									<i className='fas fa-folder-plus'></i>
 									<span>Library</span>

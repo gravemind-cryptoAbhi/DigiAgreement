@@ -42,6 +42,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import './drawer.css';
 import { FileTextOutlined, TeamOutlined } from '@ant-design/icons';
 import { token_request } from './Utils/TokenExpire';
+import './Dashboard.css'
 const { TabPane } = Tabs;
 
 const useStyles = makeStyles((theme) => ({
@@ -1503,7 +1504,8 @@ function Dashboard() {
 								</div>
 							</div>
 
-							<div className='row'>
+							<div className='Dash_main_content'>
+								
 								{!loading ? (
 									<div
 										className='col-sm-2'
