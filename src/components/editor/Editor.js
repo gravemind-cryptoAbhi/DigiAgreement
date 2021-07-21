@@ -89,6 +89,8 @@ const Editor = () => {
 		'days',
 	);
 
+	const [showMenu, setShowMenu] = useState(false)
+
 	useEffect(() => {
 		if (remainingDays < 0) {
 			notification['info']({
@@ -1922,6 +1924,8 @@ const Editor = () => {
 					</Row>
 				</form>
 			</Modal>
+
+			{/* //Actual page */}
 			<div id='layout-wrapper'>
 				<header id='page-topbar'>
 					<div className='navbar-header'>
@@ -1972,6 +1976,7 @@ const Editor = () => {
 								type='button'
 								class='btn btn-sm px-3 font-size-24 header-item waves-effect'
 								id='vertical-navmenu-btn'
+								onClick={()=>{setShowMenu(!showMenu)}}
 							>
 								<i class='mdi mdi-menu'></i>
 							</button>
@@ -2453,7 +2458,7 @@ const Editor = () => {
 					</div>
 				</header>
 
-				<div className='vertical-menubar'>
+				<div className='vertical-menubar' style={{display:showMenu? "block":"none"}}>
 					<div data-simplebar className='h-100'>
 						<div id='sidebar-navbar-menu'>
 							<ul className='metismenu list-unstyled' id='side-menu'>

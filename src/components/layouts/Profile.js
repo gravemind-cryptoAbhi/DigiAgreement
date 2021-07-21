@@ -233,14 +233,15 @@ const Profile = () => {
 				<HeadSide heading='Profile' />
 				<div className='main-content'>
 					<div className='page-content'>
-						<div className='container-fluid'>
+						<div className='container'>
 							<div className='row'>
 								<div className='col-sm-8'>
 									<div className='profile-form'>
 										<h4>Personal information</h4>
 										<form onSubmit={handleSubmit}>
-											<Space direction='vertical' size='large'>
-												<Space size='large'>
+											<Space direction='vertical' size='large' className="ant-spaace">
+												{/* <div className="ant-space"> */}
+												<Space size='large' className="space-item">
 													<InputField
 														label='First Name'
 														name='first_name'
@@ -254,7 +255,7 @@ const Profile = () => {
 														value={values?.last_name}
 													/>
 												</Space>
-												<Space size='large'>
+												<Space size='large' className="space-item">
 													<InputField
 														label='Email'
 														name='email'
@@ -270,7 +271,7 @@ const Profile = () => {
 														value={values?.contact}
 													/>
 												</Space>
-												<Space size='large'>
+												<Space size='large' className="space-item">
 													<InputField
 														label='Address'
 														name='address'
@@ -284,7 +285,7 @@ const Profile = () => {
 														value={values?.pincode}
 													/>
 												</Space>
-												<Space size='large'>
+												<Space size='large' className="space-item">
 													<InputField
 														label='City'
 														name='city'
@@ -304,6 +305,7 @@ const Profile = () => {
 													onChange={handleChange}
 													value={values?.country}
 												/>
+												{/* </div> */}
 											</Space>
 
 											<div
@@ -400,4 +402,5 @@ export default Profile;
 
 const InputField = styled(TextField)`
 	width: 22rem;
+	margin-right: 0;
 `;
