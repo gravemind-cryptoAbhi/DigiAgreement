@@ -4394,3 +4394,35 @@ fieldset[disabled] .form-control {
 .file-name:hover {
 	border: 0.5px solid silver;
 }
+
+.ant-space{
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.space-item{
+	flex-direction: row;
+	margin-right: 0;
+}
+
+@media (max-width: 525px) {
+.pull-right{
+	position: absolute;
+	text-align: center;
+}
+.profile-form{
+	padding: 30px 5% 30px 0px;
+    margin-top: 165px;
+}
+.profile-image-pro{
+	padding-top: 30px;
+    text-align: center;
+    float: initial;
+}
+.ant-space {
+	display: block;
+}
+.space-item{
+	flex-direction: column;
+}
+}
