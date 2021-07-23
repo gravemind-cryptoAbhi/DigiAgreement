@@ -732,7 +732,7 @@ const HeadSide = (props) => {
 				</div>
 			</header>
 
-			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" }}>
+			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" ,position:"fixed" }}>
 				<div data-simplebar className='h-100'>
 					<div id='sidebar-navbar-menu'>
 						<ul className='metismenu list-unstyled' id='side-menu'>

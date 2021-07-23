@@ -202,7 +202,7 @@ body[data-sidebar='dark'] .logo-light {
 }
 @media (max-width: 380px) {
 	.navbar-brand-box {
-		display: none;
+		display: contents;
 	}
 }
 body[data-layout='horizontal'] .navbar-header {

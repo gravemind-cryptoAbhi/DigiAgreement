@@ -107,8 +107,8 @@ const Login = () => {
 
 			<div className='login-section'>
 				<div className='container'>
-					<div className='row'>
-						<div className='col-sm-6 login-form'>
+					<div className='row' style={{justifyContent: "center"}}>
+						<div className='col-lg-6 login-form'>
 							<h3>Login to DigiAgreement</h3>
 							<form onSubmit={handleSubmit}>
 								<div className='form-group'>
@@ -175,8 +175,8 @@ const Login = () => {
 									or log in with other account
 								</div>
 							</p>
-							<p className='text-center social-btn'>
-								<Space size={30}>
+							<p className='text-center '>
+								<Space className='social-btn' size={30}>
 									<GoogleLogin />
 									<FbLogin />
 									<LinkedLogin />
@@ -189,7 +189,7 @@ const Login = () => {
 								</Link>
 							</p>
 						</div>
-						<div className='col-sm-6 right-bar-login'>
+						<div className='col-lg-6 right-bar-login'>
 							<div className='right-bar-content'>
 								<h4>Contracts as Easy as 1-2-3</h4>
 								<p>
