@@ -16,6 +16,7 @@ import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceW
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 import { isTokenValid, logout } from './TokenExpire';
 import styled from 'styled-components';
+import './css/responsive.css'
 
 const useStyles = makeStyles((theme) => ({
 	backdrop: {
@@ -340,6 +341,17 @@ const HeadSide = (props) => {
 				</Collapse> */}
 				<div className='navbar-header'>
 					<div className='d-flex'>
+						<button
+							type='button'
+							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
+							id='vertical-navmenu-btn'
+							onClick={() => {
+								setShowMenu(!showMenu)
+							}}
+						>
+							<i class='mdi mdi-menu'></i>
+						</button>
+
 						<div className='navbar-brand-box'>
 							<a
 								href=''
@@ -383,18 +395,6 @@ const HeadSide = (props) => {
 								</span>
 							</Link>
 						</div>
-
-						<button
-							type='button'
-							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
-							id='vertical-navmenu-btn'
-							onClick={() => {
-								setShowMenu(!showMenu)
-							}}
-						>
-							<i class='mdi mdi-menu'></i>
-
-						</button>
 
 						<div className='d-none d-sm-block'>
 							<h4 className='font-size-18' style={{  marginTop: '19px' }}>
@@ -601,8 +601,7 @@ const HeadSide = (props) => {
 																									</span>
 																									<span className='icons-table'>
 																										<i
-																											className='fas fa-comment-dots
-  '
+																											className='fas fa-comment-dots'
 																										></i>{' '}
 																										3
 																									</span>
@@ -732,7 +731,7 @@ const HeadSide = (props) => {
 				</div>
 			</header>
 
-			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" ,position:"fixed" }}>
+			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none"  }}>
 				<div data-simplebar className='h-100'>
 					<div id='sidebar-navbar-menu'>
 						<ul className='metismenu list-unstyled' id='side-menu'>

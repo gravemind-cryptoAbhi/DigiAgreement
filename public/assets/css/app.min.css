@@ -183,7 +183,7 @@ body[data-topbar='dark'] .app-search span {
 	color: rgba(255, 255, 255, 0.5);
 }
 body[data-sidebar='dark'] .navbar-brand-box {
-	background: #333547;
+	background: transparent;
 }
 body[data-sidebar='dark'] .logo-dark {
 	display: none;
@@ -541,6 +541,7 @@ body[data-layout='horizontal'] .footer {
 	> a
 	span {
 	display: inline;
+	
 }
 .vertical-collpsed .vertical-menubar #sidebar-navbar-menu > ul > li:hover > ul {
 	display: block;
@@ -623,7 +624,8 @@ body[data-layout='horizontal'] .footer {
 	color: #f8f9fa;
 }
 body[data-sidebar='dark'] .vertical-menubar {
-	background: #1b1d24;
+	background: #f4f4f4;
+	position: fixed;
 }
 body[data-sidebar='dark'] #sidebar-navbar-menu ul li a {
 	color: #8699ad;
