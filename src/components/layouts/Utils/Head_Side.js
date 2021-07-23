@@ -340,6 +340,17 @@ const HeadSide = (props) => {
 				</Collapse> */}
 				<div className='navbar-header'>
 					<div className='d-flex'>
+						<button
+							type='button'
+							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
+							id='vertical-navmenu-btn'
+							onClick={() => {
+								setShowMenu(!showMenu)
+							}}
+						>
+							<i class='mdi mdi-menu'></i>
+						</button>
+
 						<div className='navbar-brand-box'>
 							<a
 								href=''
@@ -383,18 +394,6 @@ const HeadSide = (props) => {
 								</span>
 							</Link>
 						</div>
-
-						<button
-							type='button'
-							class='btn btn-sm px-3 font-size-24 header-item waves-effect'
-							id='vertical-navmenu-btn'
-							onClick={() => {
-								setShowMenu(!showMenu)
-							}}
-						>
-							<i class='mdi mdi-menu'></i>
-
-						</button>
 
 						<div className='d-none d-sm-block'>
 							<h4 className='font-size-18' style={{  marginTop: '19px' }}>
@@ -601,8 +600,7 @@ const HeadSide = (props) => {
 																									</span>
 																									<span className='icons-table'>
 																										<i
-																											className='fas fa-comment-dots
-  '
+																											className='fas fa-comment-dots'
 																										></i>{' '}
 																										3
 																									</span>

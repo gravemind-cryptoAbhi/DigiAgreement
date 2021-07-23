@@ -1099,8 +1099,7 @@ const Editor = () => {
 							.then((res1) => {
 								if (res1.data[0].status === 'pending_update') {
 									fetch(
-										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=pending_update&guest_user_id=${
-											store.get('digi_user')['id']
+										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=pending_update&guest_user_id=${store.get('digi_user')['id']
 										}&token=${store.get('digi_token')}`,
 										{
 											method: 'POST',
@@ -1117,8 +1116,7 @@ const Editor = () => {
 								}
 								if (res1.data[0].status === 'approved') {
 									fetch(
-										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=approved&guest_user_id=${
-											store.get('digi_user')['id']
+										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=approved&guest_user_id=${store.get('digi_user')['id']
 										}&token=${store.get('digi_token')}`,
 										{
 											method: 'POST',
@@ -1135,8 +1133,7 @@ const Editor = () => {
 								}
 								if (res1.data[0].status === 'in_progress') {
 									fetch(
-										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_progress&guest_user_id=${
-											store.get('digi_user')['id']
+										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_progress&guest_user_id=${store.get('digi_user')['id']
 										}&token=${store.get('digi_token')}`,
 										{
 											method: 'POST',
@@ -1153,8 +1150,7 @@ const Editor = () => {
 								}
 								if (res1.data[0].status === 'in_review') {
 									fetch(
-										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${
-											store.get('digi_user')['id']
+										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${store.get('digi_user')['id']
 										}&token=${store.get('digi_token')}`,
 										{
 											method: 'POST',
@@ -1171,8 +1167,7 @@ const Editor = () => {
 								}
 								if (res1.data[0].status === 'draft') {
 									fetch(
-										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${
-											store.get('digi_user')['id']
+										`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${store.get('digi_user')['id']
 										}&token=${store.get('digi_token')}`,
 										{
 											method: 'POST',
@@ -1437,8 +1432,7 @@ const Editor = () => {
 						.then((res1) => {
 							if (res1.data[0].status === 'pending_update') {
 								fetch(
-									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=pending_update&guest_user_id=${
-										store.get('digi_user')['id']
+									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=pending_update&guest_user_id=${store.get('digi_user')['id']
 									}&token=${store.get('digi_token')}`,
 									{
 										method: 'POST',
@@ -1456,8 +1450,7 @@ const Editor = () => {
 							}
 							if (res1.data[0].status === 'approved') {
 								fetch(
-									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=approved&guest_user_id=${
-										store.get('digi_user')['id']
+									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=approved&guest_user_id=${store.get('digi_user')['id']
 									}&token=${store.get('digi_token')}`,
 									{
 										method: 'POST',
@@ -1475,8 +1468,7 @@ const Editor = () => {
 							}
 							if (res1.data[0].status === 'in_progress') {
 								fetch(
-									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_progress&guest_user_id=${
-										store.get('digi_user')['id']
+									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_progress&guest_user_id=${store.get('digi_user')['id']
 									}&token=${store.get('digi_token')}`,
 									{
 										method: 'POST',
@@ -1494,8 +1486,7 @@ const Editor = () => {
 							}
 							if (res1.data[0].status === 'in_review') {
 								fetch(
-									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${
-										store.get('digi_user')['id']
+									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${store.get('digi_user')['id']
 									}&token=${store.get('digi_token')}`,
 									{
 										method: 'POST',
@@ -1513,8 +1504,7 @@ const Editor = () => {
 							}
 							if (res1.data[0].status === 'draft') {
 								fetch(
-									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${
-										store.get('digi_user')['id']
+									`${url}/admin_git/digitalsignature/public/api/statuschange?id=${id}&status=in_review&guest_user_id=${store.get('digi_user')['id']
 									}&token=${store.get('digi_token')}`,
 									{
 										method: 'POST',
@@ -1671,9 +1661,9 @@ const Editor = () => {
 								<tbody>
 									{(teamsRowsPerPage > 0
 										? teams.slice(
-												teamsPage * teamsRowsPerPage,
-												teamsPage * teamsRowsPerPage + teamsRowsPerPage,
-										  )
+											teamsPage * teamsRowsPerPage,
+											teamsPage * teamsRowsPerPage + teamsRowsPerPage,
+										)
 										: teams
 									).map((data) => (
 										<tr key={data.id}>
@@ -1930,6 +1920,17 @@ const Editor = () => {
 				<header id='page-topbar'>
 					<div className='navbar-header'>
 						<div className='d-flex'>
+
+
+							<button
+								type='button'
+								class='btn btn-sm px-3 font-size-24 header-item waves-effect'
+								id='vertical-navmenu-btn'
+								onClick={() => { setShowMenu(!showMenu) }}
+							>
+								<i class='mdi mdi-menu'></i>
+							</button>
+
 							<div className='navbar-brand-box'>
 								<Link to='/dashboard' className='logo logo-dark'>
 									<span className='logo-sm'>
@@ -1972,14 +1973,6 @@ const Editor = () => {
 								</Link>
 							</div>
 
-							<button
-								type='button'
-								class='btn btn-sm px-3 font-size-24 header-item waves-effect'
-								id='vertical-navmenu-btn'
-								onClick={()=>{setShowMenu(!showMenu)}}
-							>
-								<i class='mdi mdi-menu'></i>
-							</button>
 							<div className='d-none d-sm-block'>
 								<h4 className='font-size-18' style={{ marginTop: '19px' }}>
 									<ContentEditable
@@ -2024,7 +2017,7 @@ const Editor = () => {
 													</h5>
 												</div>
 												{store.get('fileInfo')['type'] === 'template' ||
-												store.get('fileInfo')['type'] === 'document' ? (
+													store.get('fileInfo')['type'] === 'document' ? (
 													<div className='modal-body'>
 														<div className='radio-btn'>
 															<RadioGroup
@@ -2458,7 +2451,7 @@ const Editor = () => {
 					</div>
 				</header>
 
-				<div className='vertical-menubar' style={{display:showMenu? "block":"none"}}>
+				<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" }}>
 					<div data-simplebar className='h-100'>
 						<div id='sidebar-navbar-menu'>
 							<ul className='metismenu list-unstyled' id='side-menu'>
