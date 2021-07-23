@@ -1,0 +1,9 @@
+@media screen and (max-width: 525px) {
+  .vertical-collpsed .vertical-menubar #sidebar-navbar-menu ul li a span {
+    display: contents;
+  }
+
+  .vertical-collpsed .vertical-menubar {
+    width: 80% !important;
+  }
+}

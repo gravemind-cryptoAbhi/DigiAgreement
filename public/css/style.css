@@ -249,7 +249,6 @@ span.position-post {
 }
 .right-bar-login {
 	background: #eee;
-	position: absolute !important;
 	height: 100%;
 	right: 0;
 	top: 0;
