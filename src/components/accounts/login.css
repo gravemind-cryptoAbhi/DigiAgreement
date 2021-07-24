@@ -3,19 +3,27 @@
     display: none;
     visibility: hidden;
   }
-  
   .logo {
-    
     margin-left: auto;
-
+  }
+  .login-form input.form-control{
+	width: 100%;
+  }
+  .login-form button{
+    width: 100%;
+  }
+  .login-form form{
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 919px) {
- 
+@media screen and (max-width: 992px) {
   .logo {
     text-align: center;
-    margin-left: 0.5%;
+    margin: auto;
+  }
+  .right-info{
+    display: none;
   }
 }
 .social-btn {
