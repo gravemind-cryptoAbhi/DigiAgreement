@@ -221,7 +221,7 @@ span.position-post {
 	height: 50px;
 	border: 2px solid #dcdcdc;
 	margin-bottom: 30px;
-	width: 315px;
+	width: 320px;
 }
 .login-form form {
 	width: auto;
@@ -229,7 +229,7 @@ span.position-post {
 	display: table;
 }
 .login-form button {
-	width: 315px;
+	width: 320px;
 	height: 55px;
 	font-size: 17px;
 	background: #05c6ff;
@@ -252,7 +252,8 @@ span.position-post {
 	height: 100%;
 	right: 0;
 	top: 0;
-	padding-top: 100px;
+	padding-top: 100px;   
+	margin-bottom: 30px;
 }
 .right-bar-content {
 	padding: 100px;

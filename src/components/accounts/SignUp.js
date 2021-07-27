@@ -6,6 +6,7 @@ import store from 'store';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import { css } from '@emotion/react';
 import { message } from 'antd';
+import {requests} from "../url/Requests"
 
 function SignUp() {
 	const [person, setPerson] = useState({
@@ -42,7 +43,7 @@ function SignUp() {
 			bodyFormData.append('password', person.password);
 			bodyFormData.append('first_name', person.first_name);
 			bodyFormData.append('last_name', person.last_name);
-			fetch(`${url}/admin_git/digitalsignature/public/api/register`, {
+			fetch(requests.REGISTER, {  //http://qa.digiagreement.com/api/v1/users/registration
 				method: 'POST',
 				body: bodyFormData,
 			})
