@@ -4407,7 +4407,7 @@ fieldset[disabled] .form-control {
 	margin-right: 0;
 }
 
-@media (max-width: 525px) {
+@media (max-width: 991px) {
 .pull-right{
 	position: absolute;
 	text-align: center;
@@ -4419,7 +4419,7 @@ fieldset[disabled] .form-control {
 .profile-image-pro{
 	padding-top: 30px;
     text-align: center;
-    float: initial;
+    float: left;
 }
 .ant-space {
 	display: block;
@@ -4428,3 +4428,19 @@ fieldset[disabled] .form-control {
 	flex-direction: column;
 }
 }
+
+@media (max-width: 525px) {
+	.space-item{
+		flex-direction: column;
+	}
+	.profile-image-pro{
+		float: initial;
+	}
+	.signature-placeholder{
+		width: 110%;	
+	}
+	.profile-form-right{
+		margin-left: -24px;
+	}
+	}
+

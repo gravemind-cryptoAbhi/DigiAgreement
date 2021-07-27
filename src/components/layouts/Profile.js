@@ -249,14 +249,18 @@ const Profile = () => {
 														onChange={handleChange}
 														value={values?.first_name}
 													/>
+													<div className='profile-form-right'>
 													<InputField
 														label='Last Name'
 														name='last_name'
 														onChange={handleChange}
 														value={values?.last_name}
 													/>
+													</div>
+													
 												</Space>
 												<Space size='large' className="space-item">
+													
 													<InputField
 														label='Email'
 														name='email'
@@ -264,6 +268,7 @@ const Profile = () => {
 														value={values?.email}
 														disabled
 													/>
+													<div className='profile-form-right'>
 													<InputField
 														id='c'
 														label='Contact Number'
@@ -271,6 +276,9 @@ const Profile = () => {
 														onChange={handleChange}
 														value={values?.contact}
 													/>
+														
+                                                      </div>
+												
 												</Space>
 												<Space size='large' className="space-item">
 													<InputField
@@ -279,12 +287,15 @@ const Profile = () => {
 														onChange={handleChange}
 														value={values?.address}
 													/>
+													<div className='profile-form-right'>
 													<InputField
 														label='Pincode'
 														name='pincode'
 														onChange={handleChange}
 														value={values?.pincode}
 													/>
+													</div>
+													
 												</Space>
 												<Space size='large' className="space-item">
 													<InputField
@@ -293,12 +304,15 @@ const Profile = () => {
 														onChange={handleChange}
 														value={values?.city}
 													/>
+													<div className="space-item">
 													<InputField
 														label='State'
 														name='state'
 														onChange={handleChange}
 														value={values?.state}
 													/>
+													</div>
+													
 												</Space>
 												<InputField
 													label='Country'
