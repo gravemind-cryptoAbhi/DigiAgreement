@@ -11,6 +11,7 @@ import ScaleLoader from 'react-spinners/ScaleLoader';
 import { css } from '@emotion/react';
 import { message, Space } from 'antd';
 import './login.css'
+import { requests } from '../url/Requests';
 
 const Login = () => {
 	useEffect(() => {
@@ -49,7 +50,7 @@ const Login = () => {
 
 			axios
 				.post(
-					`${url}/admin_git/digitalsignature/public/api/login`,
+					requests.LOGIN,
 					bodyFormData,
 				)
 				.then((res) => {

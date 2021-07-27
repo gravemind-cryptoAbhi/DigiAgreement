@@ -1,1 +1,1 @@
-export const url = 'https://admin.webmuse.in';
+export const url = 'http://qa.digiagreement.com/api/v1';
