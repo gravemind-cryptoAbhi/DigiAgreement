@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ListView from './ListView';
 import ThumbnailView from './ThumbnailView';
 import HeadSide from './Utils/Head_Side';

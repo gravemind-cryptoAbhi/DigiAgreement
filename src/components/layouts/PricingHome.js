@@ -8,7 +8,7 @@ import { Backdrop, CircularProgress } from "@material-ui/core";
 import { loadStripe } from "@stripe/stripe-js";
 import { Button, Input, Form, Modal } from "antd";
 import axios from "axios";
-import { isTokenValid, logout } from "./Utils/TokenExpire";
+// import { isTokenValid, logout } from "./Utils/TokenExpire";
 const { TextArea } = Input;
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,7 @@ const PricingHome = () => {
     }
   };
   const [plans, setPlans] = useState([]);
-  const [planFeatures, setPlanFeatures] = useState([]);
+  // const [planFeatures, setPlanFeatures] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

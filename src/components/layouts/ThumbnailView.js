@@ -48,6 +48,7 @@ const ThumbnailView = ({ designs }) => {
 	const classes = useStyles();
 	const [bdOpen, setBdOpen] = useState(!true);
 	const [templates, setTemplates] = useState([]);
+	 // eslint-disable-next-line
 	const [processing, setProcessing] = useState(false);
 	const user = store.get('digi_user')['plansubscription'];
 	const remainingDays = moment(user['expiry_date']).diff(moment(), 'days');
@@ -58,6 +59,7 @@ const ThumbnailView = ({ designs }) => {
 	`;
 	useEffect(() => {
 		getData();
+		 // eslint-disable-next-line
 	}, [designs]);
 
 	function getData() {

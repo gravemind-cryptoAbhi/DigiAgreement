@@ -14,7 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import moment from 'moment';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import { isTokenValid, logout } from './TokenExpire';
+// import { isTokenValid, logout } from './TokenExpire';
 import styled from 'styled-components';
 import './css/responsive.css'
 
@@ -250,8 +250,8 @@ const HeadSide = (props) => {
 	const [page, setPage] = useState(0);
 	const [rowsPerPage, setRowsPerPage] = useState(5);
 
-	const emptyRows =
-		rowsPerPage - Math.min(rowsPerPage, templates.length - page * rowsPerPage);
+	// const emptyRows =
+	// 	rowsPerPage - Math.min(rowsPerPage, templates.length - page * rowsPerPage);
 
 	const handleChangePage = (event, newPage) => {
 		setPage(newPage);
@@ -261,9 +261,9 @@ const HeadSide = (props) => {
 		setRowsPerPage(parseInt(event.target.value, 10));
 		setPage(0);
 	};
-	const [open, setOpen] = useState(false);
-	var end_date = {};
-	var start_date = {};
+	// const [open, setOpen] = useState(false);
+	// let end_date = {};
+	// let start_date = {};
 	const [leftDays, setLeftDays] = useState(0);
 	let remainingDays = moment(
 		store.get('digi_user')['plansubscription']['expiry_date'],
@@ -278,8 +278,8 @@ const HeadSide = (props) => {
 	useEffect(() => {
 		if (store.get('digi_user')['plansubscription']) {
 			setTimeout(() => {
-				end_date = moment();
-				start_date = moment(
+				let end_date = moment();
+				let start_date = moment(
 					store.get('digi_user')['plansubscription']['expiry_date'],
 				);
 				setLeftDays(start_date.diff(end_date, 'days'));
@@ -295,7 +295,7 @@ const HeadSide = (props) => {
 				}
 			}, 1000);
 		}
-	}, []);
+	}, [remainingDays, leftDays]);
 
 	return (
 		<>
@@ -354,8 +354,8 @@ const HeadSide = (props) => {
 
 						<div className='navbar-brand-box'>
 							<a
-								href=''
-								onClick={() => history.push('/dashboard')}
+								href='/dashboard'
+								// onClick={() => history.push('/dashboard')}
 								className='logo logo-dark'
 							>
 								<span className='logo-sm'>
@@ -397,7 +397,7 @@ const HeadSide = (props) => {
 						</div>
 
 						<div className='d-none d-sm-block'>
-							<h4 className='font-size-18' style={{  marginTop: '19px' }}>
+							<h4 className='font-size-18' style={{ marginTop: '19px' }}>
 								{props.heading}
 							</h4>
 						</div>
@@ -437,8 +437,8 @@ const HeadSide = (props) => {
 												message: 'Plan Expired',
 												description:
 													'Your Plan has been Expired, kindly Subscribe Now to Continue.',
-												onClick: function () {
-													window.location.href = '/pricing';
+												onClick: () => {
+													history.push('/pricing');
 												},
 												style: { cursor: 'pointer' },
 											})
@@ -699,8 +699,8 @@ const HeadSide = (props) => {
 							<div className='dropdown-menu dropdown-menu-right' id='d'>
 								<a
 									className='dropdown-item'
-									href=''
-									onClick={() => history.push('/profile')}
+									href='/profile'
+									// onClick={() => history.push('/profile')}
 								>
 									{/* <i className='mdi mdi-account-circle font-size-17 align-middle mr-1'></i> */}
 									<AccountCircleOutlinedIcon fontSize='small' />
@@ -708,8 +708,9 @@ const HeadSide = (props) => {
 									Profile
 								</a>
 								<a
+									href="/billing"
 									className='dropdown-item d-block'
-									onClick={() => history.push('/billing')}
+								// onClick={() => history.push('/billing')}
 								>
 									{/* <i className='mdi mdi-settings font-size-17 align-middle mr-1'></i> */}
 									<AccountBalanceWalletOutlinedIcon fontSize='small' />
@@ -731,7 +732,7 @@ const HeadSide = (props) => {
 				</div>
 			</header>
 
-			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none"  }}>
+			<div className='vertical-menubar' style={{ display: showMenu ? "block" : "none" }}>
 				<div data-simplebar className='h-100'>
 					<div id='sidebar-navbar-menu'>
 						<ul className='metismenu list-unstyled' id='side-menu'>
@@ -739,7 +740,6 @@ const HeadSide = (props) => {
 								className={props.page === 'dashboard' ? 'mm-active' : undefined}
 							>
 								<Link
-									//href=''
 									to='/dashboard'
 									//onClick={() => history.push('/dashboard')}
 									className={
@@ -758,7 +758,6 @@ const HeadSide = (props) => {
 								className={props.page === 'document' ? 'mm-active' : undefined}
 							>
 								<Link
-									//href=''
 									to='/document'
 									//onClick={() => history.push('/document')}
 									className={
@@ -775,7 +774,6 @@ const HeadSide = (props) => {
 								className={props.page === 'template' ? 'mm-active' : undefined}
 							>
 								<Link
-									//href=''
 									to='/template'
 									//onClick={() => history.push('/template')}
 									className={
@@ -790,7 +788,6 @@ const HeadSide = (props) => {
 							</li>
 							<li className={props.page === 'teams' ? 'mm-active' : undefined}>
 								<Link
-									//href=''
 									to='/members'
 									//onClick={() => history.push('/teams')}
 									className={

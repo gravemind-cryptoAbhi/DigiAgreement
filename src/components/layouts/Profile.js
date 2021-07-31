@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HeadSide from './Utils/Head_Side';
 import store from 'store';
 import ScaleLoader from 'react-spinners/ScaleLoader';
@@ -28,6 +28,7 @@ const Profile = () => {
 	const data = store.get('digi_user');
 	const [processing, setProcessing] = useState(false);
 	const [disabled, setDisabled] = useState(true);
+	 // eslint-disable-next-line
 	const [photo, setPhoto] = useState(null);
 	const [values, setValues] = useState({
 		first_name: data['first_name'],
@@ -359,7 +360,7 @@ const Profile = () => {
 								</div>
 								<div className='col-sm-4 pull-right'>
 									<div className='profile-image-pro'>
-										<img src={data['profile_pic']} alt='profile image' />
+										<img src={data['profile_pic']} alt='avatar' />
 										<br />
 										<div className='reset-btn-email upload-img-pro'>
 											{/* <Upload>
